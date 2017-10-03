@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nareman.e_commerce.Signup"
+    android:background="@color/colorAc">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textlogin"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textnameerror"
+        android:text="Mobile invalid"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textlogin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texterrormail"
+        android:visibility="gone"
+        android:text="Invalid mail"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@+id/nametext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textmobileerror"
+        android:text="Mobile invalid"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textlogin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texterrorpass"
+        android:visibility="gone"
+        android:text="password invalid"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@+id/mobiletext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nametext"
+        android:hint="Name"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:layout_below="@+id/textlogin"
+        android:layout_toEndOf="@+id/texterrormail"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Emailtext"
+        android:textColor="@color/white"
+        android:hint="E-mail"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/mobiletext"
+        android:layout_toEndOf="@+id/texterrormail"
+        android:layout_marginBottom="27dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorLink="@color/color"
+        android:paddingBottom="18dp"
+        android:text="SIGN UP"
+        android:id="@+id/submit"
+        android:textColor="@color/white"
+        android:background="@color/colorAc"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passtext"
+        android:inputType="textPassword"
+        android:layout_marginRight="44dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_https_black_24dp"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/submit"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/mobiletext"
+        android:hint="Phone"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_tablet_mac_black_24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/passtext"
+        android:layout_toEndOf="@+id/texterrormail" />
+
+</RelativeLayout>

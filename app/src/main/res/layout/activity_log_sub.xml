@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_sub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nareman.e_commerce.Log_sub"
+    android:background="@color/colorAc">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textlogin"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textmobileerror"
+        android:text="Mobile invalid"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textlogin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texterrorpass"
+        android:visibility="gone"
+        android:text="password invalid"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@+id/mobiletext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorLink="@color/color"
+        android:paddingBottom="18dp"
+        android:text="login"
+        android:id="@+id/login"
+        android:textColor="@color/white"
+        android:background="@color/colorAc"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/passtext"
+        android:layout_alignEnd="@+id/passtext"
+        android:layout_marginEnd="98dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/mobiletext"
+        android:hint="Phone"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_tablet_mac_black_24dp"
+        android:layout_marginTop="149dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passtext"
+        android:inputType="textWebPassword"
+        android:layout_marginEnd="44dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_https_black_24dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/mobiletext"
+        android:layout_toEndOf="@+id/texterrorpass" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:id="@+id/signup"
+        android:textColor="@color/white"
+        android:background="@color/colorAc"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textanaccount"
+        android:text="Don't have an account?"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/signup"
+        android:layout_alignBottom="@+id/signup"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
